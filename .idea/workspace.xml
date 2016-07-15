@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5d84bb4-8b74-447c-977c-4ce2c51d8416" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.stack-work/install/x86_64-osx/lts-6.6/7.10.3/pkgdb/package.cache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/devel.cfg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site_key.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/snaplets/heist/templates/base.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Application.hs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Site.hs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stack.yaml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/build/autogen/Paths_androiddocs.hs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/build/autogen/cabal_macros.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/package.conf.inplace/package.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/setup-config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/setup-config.ghc-mod.cabal-components" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/setup-config.ghc-mod.package-db-stack" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/setup-config.ghc-mod.package-options" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/setup-config.ghc-mod.resolved-components" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/setup/setup.hs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/setup/setup.version" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androiddocs.cabal" afterPath="$PROJECT_DIR$/androiddocs.cabal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/access.log" afterPath="$PROJECT_DIR$/log/access.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/error.log" afterPath="$PROJECT_DIR$/log/error.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.hs" afterPath="$PROJECT_DIR$/src/Main.hs" />
-    </list>
+    <list default="true" id="d5d84bb4-8b74-447c-977c-4ce2c51d8416" name="Default" comment="" />
     <ignored path="androiddocs.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -168,16 +144,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="androiddocs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="androiddocs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="androiddocs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -488,7 +454,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="161" width="1920" height="1080" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -499,7 +465,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36666667" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36666667" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="GhcMod" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
