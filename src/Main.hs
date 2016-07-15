@@ -1,24 +1,38 @@
-{-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE CPP #-}
+{-# LANGUAGE TemplateHaskell #-}
+
 module Main where
 
-import           Control.Applicative
 import           Snap.Core
-import           Snap.Util.FileServe
 import           Snap.Http.Server
+import           Snap.Snaplet.Config
+import           Snap.Snaplet
+import           System.IO
+import           Control.Exception (SomeException, try)
+import qualified Data.Text as T
+
+import Site
+
+#ifdef DEVELOPMENT
+import           Snap.Loader.Dynamic
+#else
+import           Snap.Loader.Static
+#endif
 
 main :: IO ()
-main = quickHttpServe site
+main = do
+  (conf, site, cleanup) <- $(loadSnapTH [| getConf |]
+                                          'getActions
+                                          ["snaplets/heist/templates"])
+  _ <- try $ httpServe conf site :: IO (Either SomeException ())
+  cleanup
 
-site :: Snap ()
-site =
-    ifTop (writeBS "hello world") <|>
-    route [ ("foo", writeBS "bar")
-          , ("echo/:echoparam", echoHandler)
-          ] <|>
-    dir "static" (serveDirectory ".")
+getConf :: IO (Config Snap AppConfig)
+getConf = commandLineAppConfig defaultConfig
 
-echoHandler :: Snap ()
-echoHandler = do
-    param <- getParam "echoparam"
-    maybe (writeBS "must specify echo/param in URL")
-          writeBS param
+getActions :: Config Snap AppConfig -> IO (Snap (), IO ())
+getActions conf = do
+  (msgs, site, cleanup) <- runSnaplet
+    (appEnvironment =<< getOther conf) app
+  hPutStrLn stderr $ T.unpack msgs
+  return (site, cleanup)
