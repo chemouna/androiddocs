@@ -15,6 +15,7 @@ import           Control.Monad.Trans
 import           Snap.Snaplet.Auth
 import           Snap.Snaplet.Auth.Backends.JsonFile
 import           Snap.Snaplet.Session.Backends.CookieSession
+import           Snap.Snaplet.Heist
 import           Snap.Extras
 
 
